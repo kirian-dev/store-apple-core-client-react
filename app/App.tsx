@@ -1,11 +1,12 @@
 import { FC } from 'react';
+import { MainProvider } from './providers';
+import { AppRoutes } from './routes';
 
 const App: FC = () => {
-    return (
-        <div>
-            <h1 className="text-sm font-medium text-gray-900">hi</h1>
-            <div className="text-xl">hello</div>
-        </div>
-    );
+  return (
+    <MainProvider>
+      <AppRoutes />
+    </MainProvider>
+  );
 };
 export default App;

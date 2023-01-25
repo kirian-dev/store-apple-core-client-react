@@ -1,1 +1,4 @@
-export const API_URL = process.env.API_URL as string;
+export const API_URL = import.meta.env.API_BASE_URL
+
+export const getProductsUrl = () => `/api/v1/products`
+
